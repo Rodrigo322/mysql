@@ -10,7 +10,6 @@ routes.get('/users/list:id', UserController.listarUm);
 routes.put('/users/update/:id', UserController.atualizar);
 routes.delete('/users/delete/:id', UserController.delete);
 
-
 routes.post('/:user_id/addresses', AddressesController.store);
 
 module.exports = routes;
