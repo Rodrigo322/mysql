@@ -31,7 +31,7 @@ module.exports = {
 
         const address = await Addresses.findAll({ where: { user_id } });
 
-        return res.json({ user_id, address });
+        return res.json({ user, address });
     },
     async update(req, res) {
         const { user_id, id } = req.params;
