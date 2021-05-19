@@ -20,6 +20,7 @@ module.exports = {
 
         return res.json( address );
     },
+    
     async index(req, res) {
         const { user_id } = req.params;
 
@@ -33,6 +34,8 @@ module.exports = {
 
         return res.json({ user, address });
     },
+
+
     async update(req, res) {
         const { user_id, id } = req.params;
         const { zipcode, street, number } = req.body;
